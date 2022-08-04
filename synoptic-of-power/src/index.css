@@ -1,0 +1,250 @@
+:root {
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #f7f7f7;
+    --red: #c23644;
+    --blue: #3B4070;
+    --gris: #EDF2F4;
+    --white: #FFFFFF;
+    --black: #0a141d;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arenas movedizas', sans-serif;
+    
+}
+
+/* estilos del nav */
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px ;
+    border-bottom: 1px solid var(--very-light-pink);
+    background-color: var(--blue);
+}
+.logo{
+    height: 50px;
+    width: 100%;
+    margin-top: 5px;
+    
+}
+.navbarLeft ul,
+.navbarRight ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height:60px;
+}
+.navbarLeft{
+    display: flex;
+
+}
+.navbarLeft ul{
+
+    margin-left: 12px;
+}
+.navbarLeft ul li a,
+.navbarRight ul li a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: var(--white);
+    border: px solid var(--white);
+    padding: 8px;
+    border-radius: 8px;
+}
+.navbar-left ul li a:hover,
+.navbar-right ul li a:hover {
+    color: var(--blue);
+    background-color: var(--white);
+}
+
+/* container search */
+
+.containerSearch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.search {
+    width: 70%;
+    position: relative;
+    display: flex;
+  }
+  
+  .searchTerm {
+    width: 100%;
+    border: 4px solid var(--blue);
+    border-right: none;
+    padding: 5px;
+    height: 56px;
+    font-size: var(--lg);
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    color: #9DBFAF;
+  }
+  
+  
+  .searchButton {
+    width: 70px;
+    height: 56px;
+    border: 1px solid var(--blue);
+    background: var(--blue);
+    text-align: center;
+    color: #fff;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  /* botones search */
+  .containerBotones{
+    margin: 45px 0;
+  }
+  .ButtonSecundary{
+    font-size: var(--lg);
+    margin:0 30px;
+    text-decoration: none;
+    color: var(--white);
+    border: 1px solid var(--blue);
+    background: var(--blue);
+    padding: 12px 32px;
+    border-radius: 20px;
+  }
+
+/* container primary */
+
+.containerPrimary{
+    margin: 20px 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,280px);
+    gap: 46px;
+    place-content: center;
+}
+
+/* container profile */
+
+.containerProfile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+
+}
+
+.containerProfile img {
+    width: 280px;
+    height: 280px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.containerProfile p{
+    font-size: var(--md);
+    margin: 6px 0;
+    text-align: center;
+}
+
+.containerProfile a{
+    
+    text-align: center;
+    text-decoration: none;
+    width: 140px;
+    color: var(--white);
+    border: 1px solid var(--blue);
+    background: var(--blue);
+    padding: 8px;
+    border-radius: 20px;
+}
+
+.containerProfile a i{
+    margin-left: 20px;
+}
+/* estilos footer */
+
+footer{
+    margin-top: 40px;
+    width: 100%;
+    background-color: var(--black);
+}
+
+.footerContainer{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+
+.footer-about{
+    margin-left: 40px;
+}
+.footer-about h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.footer-about p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.footer-follow-user{
+    display:flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-follow-user a{ 
+      
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.footer-follow-user p{
+    font-size: 16px;
+    color: var(--white);
+    margin-top: 10px;
+}
+
+.footer-follow-user a:hover{
+    color: var(--red);
+}
+
+.footer-copy{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: var(--white);
+}
+.footer-copy small{
+    font-size: 15px;
+}
+
+.fafaSearch{
+
+}
