@@ -1,6 +1,6 @@
 import React from 'react';
 import { Outlet, Link } from "react-router-dom";
-import styles from './../index.css' ;
+import styles from './../style.module.css' ;
 import logo from './../images/image.png'
 const Layout = () => {
   return (

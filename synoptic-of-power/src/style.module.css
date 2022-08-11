@@ -190,28 +190,28 @@ footer{
     padding: 45px 0px;
 }
 
-.footer-about{
+.footerAbout{
     margin-left: 40px;
 }
-.footer-about h2{
+.footerAbout h2{
     color: #fff;
     margin-bottom: 25px;
     font-size: 20px;
 }
 
-.footer-about p{
+.footerAbout p{
     color: #efefef;
     margin-bottom: 10px;
 }
 
-.footer-follow-user{
+.footerFollowUser{
     display:flex;
     text-align: center;
     align-items: center;
     flex-direction: column;
 }
 
-.footer-follow-user a{ 
+.footerFollowUser a{ 
       
     text-decoration: none;
     width: 45px;
@@ -225,23 +225,23 @@ footer{
     transition: all 300ms ease;
 }
 
-.footer-follow-user p{
+.footerFollowUser p{
     font-size: 16px;
     color: var(--white);
     margin-top: 10px;
 }
 
-.footer-follow-user a:hover{
+.footerFollowUser a:hover{
     color: var(--red);
 }
 
-.footer-copy{
+.footerCopy{
     background-color: #0a1a2a;
     padding: 15px 10px;
     text-align: center;
     color: var(--white);
 }
-.footer-copy small{
+.footerCopy small{
     font-size: 15px;
 }
 

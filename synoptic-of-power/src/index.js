@@ -1,27 +1,37 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import './index.css';
+import { Outlet } from "react-router-dom";
+
 import reportWebVitals from './reportWebVitals';
 // Pages 
 import Home from './page/Home'
-import Layout from './page/Layout';
+import Layout from './components/Layout';
 import Contact from './page/Contact'
 import Political from './page/Political'
 import NoPage from './page/NoPage'
-
+import FootHome from './components/FootHome';
+import SearchPage from './page/SearchPage';
 export default function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="political" element={<Political />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="*" element={<NoPage />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="political" element={<Political />} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="searchpage" element={<SearchPage />} />
+            <Route path="*" element={<NoPage />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+      <FootHome></FootHome>
+      <Outlet/>
+    </>
+    
+
+
   );
 }
 const root = ReactDOM.createRoot(document.getElementById('root'));
