@@ -5,8 +5,10 @@ import styles from './../style.module.css' ;
 const Political = () => {
   return (
     <>
-    {/* HTML */}
-    <Outlet></Outlet>
+    <h1>
+      political
+    </h1>
+
     </>
     ) 
 };
